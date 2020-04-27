@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="XML" format="xml">
+      <types:example format="xml" element="users" location="examples/User.xml"/>
+    </types:type>
+    <types:type name="JSON" format="json">
+      <types:shape format="weave" example="examples/JSONexample.json"><![CDATA[%dw 2.0
+
+type JSON = Array<{|  LicenceID: String,   firstName: String,   lastName: String,   city: String,   State: String,   Email: String,   Zipcode: Number {"typeId": "int"}|}> {"example": "[{\\\"LicenceID\\\":\\\"H-401525252\\\",\\\"firstName\\\":\\\"Henok\\\",\\\"lastName\\\":\\\"Haile\\\",\\\"city\\\":\\\"Rockville\\\",\\\"State\\\":\\\"MD\\\",\\\"Email\\\":\\\"Henoke@gmail.com\\\",\\\"Zipcode\\\":20855},{\\\"LicenceID\\\":\\\"B-401525252\\\",\\\"firstName\\\":\\\"Blen\\\",\\\"lastName\\\":\\\"Abebe\\\",\\\"city\\\":\\\"Rockville\\\",\\\"State\\\":\\\"MD\\\",\\\"Email\\\":\\\"BlenB@gmail.com\\\",\\\"Zipcode\\\":20855}]"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#be20772f-0f6d-4089-a969-c1b8859ab15b">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="JSON"/>
+        </types:message>
+      </types:input-event>
+      <types:output-event>
+        <types:message>
+          <types:payload type="XML"/>
+        </types:message>
+      </types:output-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>

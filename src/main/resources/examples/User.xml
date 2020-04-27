@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<users>
+  <users>
+    <LicenceID>H-401525252</LicenceID>
+    <firstName>Henok</firstName>
+    <lastName>Haile</lastName>
+    <city>Rockville</city>
+    <State>MD</State>
+    <Email>Henoke@gmail.com</Email>
+    <Zipcode>20855</Zipcode>
+  </users>
+  <users>
+    <LicenceID>B-401525252</LicenceID>
+    <firstName>Blen</firstName>
+    <lastName>Abebe</lastName>
+    <city>Rockville</city>
+    <State>MD</State>
+    <Email>BlenB@gmail.com</Email>
+    <Zipcode>20855</Zipcode>
+  </users>
+</users>

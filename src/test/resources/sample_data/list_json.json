@@ -1,0 +1,20 @@
+[
+{
+  "LicenceID": "H-401525252",
+  "firstName": "Henok",
+  "lastName": "Haile",
+  "city" : "Rockville",
+  "State": "MD",
+  "Email": "Henoke@gmail.com",
+  "Zipcode": 20855
+},
+{
+  "LicenceID": "B-401525252",
+  "firstName": "Blen",
+  "lastName": "Abebe",
+  "city" : "Rockville",
+  "State": "MD",
+  "Email": "BlenB@gmail.com",
+  "Zipcode": 20855
+}
+]
